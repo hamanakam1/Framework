@@ -29,7 +29,7 @@ var Installation = new Class({
 			alert(Joomla.JText._('INSTL_PROCESS_BUSY', 'Process is in progress. Please wait...'));
 			return false;
 		}
-		
+
 		var req = new Request.JSON({
 			url: this.baseUrl,
 			data: form,
@@ -141,7 +141,7 @@ var Installation = new Class({
 
 		if (!tasks.length) {
 			progress.setStyle('width',(progress.getStyle('width').toFloat()+(step_width*3))+'%');
-			this.goToPage('complete');
+			this.goToPage('extensions');
 			return;
 		}
 

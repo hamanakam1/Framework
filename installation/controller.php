@@ -78,6 +78,10 @@ class InstallationController extends JControllerLegacy
 					$model = $this->getModel('Languages', 'InstallationModel', array('dbo' => null));
 					break;
 
+				case 'extensions':
+					$model = $this->getModel('Extensions', 'InstallationModel', array('dbo' => null));
+					break;
+
 				default:
 					$model        = $this->getModel('Setup', 'InstallationModel', array('dbo' => null));
 					$sufficient   = $model->getPhpOptionsSufficient();
