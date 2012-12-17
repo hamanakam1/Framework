@@ -76,13 +76,6 @@ class modStatsHelper
 			$db->setQuery($query);
 			$items = $db->loadResult();
 
-			$query->clear();
-			$query->select('COUNT(id) AS count_links ');
-			$query->from('#__weblinks');
-			$query->where('state = 1');
-			$db->setQuery($query);
-			$links = $db->loadResult();
-
 			if ($users) {
 				$rows[$i] = new stdClass;
 				$rows[$i]->title	= JText::_('MOD_STATS_USERS');
@@ -94,13 +87,6 @@ class modStatsHelper
 				$rows[$i] = new stdClass;
 				$rows[$i]->title	= JText::_('MOD_STATS_ARTICLES');
 				$rows[$i]->data	= $items;
-				$i++;
-			}
-
-			if ($links) {
-				$rows[$i] = new stdClass;
-				$rows[$i]->title	= JText::_('MOD_STATS_WEBLINKS');
-				$rows[$i]->data	= $links;
 				$i++;
 			}
 		}

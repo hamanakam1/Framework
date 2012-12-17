@@ -80,8 +80,6 @@ SELECT 23,1,51,52,1,'com_templates','com_templates','{"core.admin":{"7":1},"core
 UNION ALL
 SELECT 24,1,53,56,1,'com_users','com_users','{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.own":{"6":1},"core.edit.state":[]}'
 UNION ALL
-SELECT 25,1,57,60,1,'com_weblinks','com_weblinks','{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'
-UNION ALL
 SELECT 26,1,61,62,1,'com_wrapper','com_wrapper','{}'
 UNION ALL
 SELECT 27,8,18,19,2,'com_content.category.2','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
@@ -89,8 +87,6 @@ UNION ALL
 SELECT 29,7,14,15,2,'com_contact.category.4','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
 UNION ALL
 SELECT 30,19,42,43,2,'com_newsfeeds.category.5','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
-UNION ALL
-SELECT 31,25,58,59,2,'com_weblinks.category.6','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
 UNION ALL
 SELECT 32,24,54,55,1,'com_users.notes.category.7','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'
 UNION ALL
@@ -215,8 +211,6 @@ UNION ALL
 SELECT 4,29,1,5,6,1,'uncategorised','com_contact','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:27:57',0,'1900-01-01 00:00:00',0,'*'
 UNION ALL
 SELECT 5,30,1,7,8,1,'uncategorised','com_newsfeeds','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:28:15',0,'1900-01-01 00:00:00',0,'*'
-UNION ALL
-SELECT 6,31,1,9,10,1,'uncategorised','com_weblinks','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:28:33',0,'1900-01-01 00:00:00',0,'*'
 UNION ALL
 SELECT 7,32,1,11,12,1,'uncategorised','com_users.notes','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:28:33',0,'1900-01-01 00:00:00',0,'*';
 
@@ -529,8 +523,6 @@ SELECT 19, 'com_search', 'component', 'com_search', '', 1, 1, 1, 0, '', '{"enabl
 UNION ALL
 SELECT 20, 'com_templates', 'component', 'com_templates', '', 1, 1, 1, 1, '', '{}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
-SELECT 21, 'com_weblinks', 'component', 'com_weblinks', '', 1, 1, 1, 0, '', '{"show_comp_description":"1","comp_description":"","show_link_hits":"1","show_link_description":"1","show_other_cats":"0","show_headings":"0","show_numbers":"0","show_report":"1","count_clicks":"1","target":"0","link_icons":""}', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 22, 'com_content', 'component', 'com_content', '', 1, 1, 0, 1, '{"name":"com_content","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2011 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"1.7.0","description":"COM_CONTENT_XML_DESCRIPTION","group":""}', '{"article_layout":"_:default","show_title":"1","link_titles":"1","show_intro":"1","show_category":"1","link_category":"1","show_parent_category":"0","link_parent_category":"0","show_author":"1","link_author":"0","show_create_date":"0","show_modify_date":"0","show_publish_date":"1","show_item_navigation":"1","show_vote":"0","show_readmore":"1","show_readmore_title":"1","readmore_limit":"100","show_icons":"1","show_print_icon":"1","show_email_icon":"1","show_hits":"1","show_noauth":"0","show_publishing_options":"1","show_article_options":"1","show_urls_images_frontend":"0","show_urls_images_backend":"1","targeta":0,"targetb":0,"targetc":0,"float_intro":"left","float_fulltext":"left","category_layout":"_:blog","show_category_title":"0","show_description":"0","show_description_image":"0","maxLevel":"1","show_empty_categories":"0","show_no_articles":"1","show_subcat_desc":"1","show_cat_num_articles":"0","show_base_description":"1","maxLevelcat":"-1","show_empty_categories_cat":"0","show_subcat_desc_cat":"1","show_cat_num_articles_cat":"1","num_leading_articles":"1","num_intro_articles":"4","num_columns":"2","num_links":"4","multi_column_order":"0","show_subcategory_content":"0","show_pagination_limit":"1","filter_field":"hide","show_headings":"1","list_show_date":"0","date_format":"","list_show_hits":"1","list_show_author":"1","orderby_pri":"order","orderby_sec":"rdate","order_date":"published","show_pagination":"2","show_pagination_results":"1","show_feed_link":"1","feed_summary":"0"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 23, 'com_config', 'component', 'com_config', '', 1, 1, 0, 1, '{"name":"com_config","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2011 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"1.7.0","description":"COM_CONFIG_XML_DESCRIPTION","group":""}', '{"filters":{"1":{"filter_type":"NH","filter_tags":"","filter_attributes":""},"6":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"7":{"filter_type":"NONE","filter_tags":"","filter_attributes":""},"2":{"filter_type":"NH","filter_tags":"","filter_attributes":""},"3":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"4":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"5":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"10":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"12":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"8":{"filter_type":"NONE","filter_tags":"","filter_attributes":""}}}', '', '', 0, '1900-01-01 00:00:00', 0, 0
@@ -587,8 +579,6 @@ UNION ALL
 SELECT 215, 'mod_syndicate', 'module', 'mod_syndicate', '', 0, 1, 1, 1, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 216, 'mod_users_latest', 'module', 'mod_users_latest', '', 0, 1, 1, 0, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
-SELECT 217, 'mod_weblinks', 'module', 'mod_weblinks', '', 0, 1, 1, 0, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 218, 'mod_whosonline', 'module', 'mod_whosonline', '', 0, 1, 1, 0, '', '', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
@@ -675,8 +665,6 @@ SELECT 419, 'plg_search_content', 'plugin', 'content', 'search', 0, 1, 1, 0, '',
 UNION ALL
 SELECT 420, 'plg_search_newsfeeds', 'plugin', 'newsfeeds', 'search', 0, 1, 1, 0, '', '{"search_limit":"50","search_content":"1","search_archived":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
-SELECT 421, 'plg_search_weblinks', 'plugin', 'weblinks', 'search', 0, 1, 1, 0, '', '{"search_limit":"50","search_content":"1","search_archived":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 422, 'plg_system_languagefilter', 'plugin', 'languagefilter', 'system', 0, 0, 1, 1, '', '{}', '', '', 0, '1900-01-01 00:00:00', 1, 0
 UNION ALL
 SELECT 423, 'plg_system_p3p', 'plugin', 'p3p', 'system', 0, 1, 1, 0, '', '{"headers":"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"}', '', '', 0, '1900-01-01 00:00:00', 2, 0
@@ -723,9 +711,7 @@ SELECT 443, 'plg_finder_contacts', 'plugin', 'contacts', 'finder', 0, 1, 1, 0, '
 UNION ALL
 SELECT 444, 'plg_finder_content', 'plugin', 'content', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 3, 0
 UNION ALL
-SELECT 445, 'plg_finder_newsfeeds', 'plugin', 'newsfeeds', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 4, 0
-UNION ALL
-SELECT 446, 'plg_finder_weblinks', 'plugin', 'weblinks', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 5, 0;
+SELECT 445, 'plg_finder_newsfeeds', 'plugin', 'newsfeeds', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 4, 0;
 
 INSERT INTO #__extensions (extension_id, name, type, element, folder, client_id, enabled, access, protected, manifest_cache, params, custom_data, system_data, checked_out, checked_out_time, ordering, state)
 SELECT 500, 'atomic', 'template', 'atomic', '', 0, 1, 1, 0, '{"name":"atomic","type":"template","creationDate":"10\/10\/09","author":"Ron Severdia","copyright":"Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.","authorEmail":"contact@kontentdesign.com","authorUrl":"http:\/\/www.kontentdesign.com","version":"2.5.0","description":"TPL_ATOMIC_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '1900-01-01 00:00:00', 0, 0
@@ -1732,12 +1718,6 @@ SELECT 16, 'menu', 'com_redirect', 'Redirect', '', 'Redirect', 'index.php?option
 UNION ALL
 SELECT 17, 'menu', 'com_search', 'Basic Search', '', 'Search', 'index.php?option=com_search', 'component', 0, 1, 1, 19, 0, '1900-01-01 00:00:00', 0, 0, 'class:search', 0, '', 43, 44, 0, '*', 1
 UNION ALL
-SELECT 18, 'menu', 'com_weblinks', 'Weblinks', '', 'Weblinks', 'index.php?option=com_weblinks', 'component', 0, 1, 1, 21, 0, '1900-01-01 00:00:00', 0, 0, 'class:weblinks', 0, '', 47, 52, 0, '*', 1
-UNION ALL
-SELECT 19, 'menu', 'com_weblinks_links', 'Links', '', 'Weblinks/Links', 'index.php?option=com_weblinks', 'component', 0, 18, 2, 21, 0, '1900-01-01 00:00:00', 0, 0, 'class:weblinks', 0, '', 48, 49, 0, '*', 1
-UNION ALL
-SELECT 20, 'menu', 'com_weblinks_categories', 'Categories', '', 'Weblinks/Categories', 'index.php?option=com_categories&extension=com_weblinks', 'component', 0, 18, 2, 6, 0, '1900-01-01 00:00:00', 0, 0, 'class:weblinks-cat', 0, '', 50, 51, 0, '*', 1
-UNION ALL
 SELECT 21, 'menu', 'com_finder', 'Smart Search', '', 'Smart Search', 'index.php?option=com_finder', 'component', 0, 1, 1, 27, 0, '1900-01-01 00:00:00', 0, 0, 'class:finder', 0, '', 41, 42, 0, '*', 1
 UNION ALL
 SELECT 22, 'menu', 'com_joomlaupdate', 'Joomla! Update', '', 'Joomla! Update', 'index.php?option=com_joomlaupdate', 'component', 0, 1, 1, 28, 0, '1900-01-01 00:00:00', 0, 0, 'class:joomlaupdate', 0, '', 41, 42, 0, '*', 1
@@ -2433,84 +2413,3 @@ UNION ALL
 SELECT 3, 'Special', 2, '[6,3,8]';
 
 SET IDENTITY_INSERT #__viewlevels  OFF;
-
-/****** Object:  Table [#__weblinks] ******/
-SET QUOTED_IDENTIFIER ON;
-
-CREATE TABLE [#__weblinks](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[catid] [int] NOT NULL DEFAULT '0',
-	[title] [nvarchar](250) NOT NULL DEFAULT '',
-	[alias] [nvarchar](255) NOT NULL,
-	[url] [nvarchar](250) NOT NULL DEFAULT 's',
-	[description] [nvarchar](max) NOT NULL,
-	[hits] [int] NOT NULL DEFAULT '0',
-	[state] [smallint] NOT NULL DEFAULT '0',
-	[checked_out] [int] NOT NULL DEFAULT '0',
-	[checked_out_time] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[ordering] [int] NOT NULL DEFAULT '0',
-	[access] [int] NOT NULL DEFAULT '1',
-	[params] [nvarchar](max) NOT NULL,
-	[language] [nvarchar](7) NOT NULL DEFAULT '',
-	[created] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[created_by] [bigint] NOT NULL DEFAULT '0',
-	[created_by_alias] [nvarchar](255) NOT NULL DEFAULT '',
-	[modified] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[modified_by] [bigint] NOT NULL DEFAULT '0',
-	[metakey] [nvarchar](max) NOT NULL,
-	[metadesc] [nvarchar](max) NOT NULL,
-	[metadata] [nvarchar](max) NOT NULL,
-	[featured] [tinyint] NOT NULL DEFAULT '0',
-	[xreference] [nvarchar](50) NOT NULL,
-	[publish_up] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[publish_down] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[images] [nvarchar](max) NOT NULL,
-	[version] [bigint] NOT NULL DEFAULT '1',
- CONSTRAINT [PK_#__weblinks_id] PRIMARY KEY CLUSTERED
-(
-	[id] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
-) ON [PRIMARY];
-
-CREATE NONCLUSTERED INDEX [idx_access] ON [#__weblinks]
-(
-	[access] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_catid] ON [#__weblinks]
-(
-	[catid] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_checkout] ON [#__weblinks]
-(
-	[checked_out] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_createdby] ON [#__weblinks]
-(
-	[created_by] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_featured_catid] ON [#__weblinks]
-(
-	[featured] ASC,
-	[catid] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_language] ON [#__weblinks]
-(
-	[language] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_state] ON [#__weblinks]
-(
-	[state] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_xreference] ON [#__weblinks]
-(
-	[xreference] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-

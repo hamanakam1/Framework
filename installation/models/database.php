@@ -575,8 +575,7 @@ class InstallationModelDatabase extends JModelLegacy
 			'categories' => 'created_user_id',
 			'contact_details' => 'created_by',
 			'content' => 'created_by',
-			'newsfeeds' => 'created_by',
-			'weblinks' => 'created_by',
+			'newsfeeds' => 'created_by'
 		);
 
 		foreach ($updates_array as $table => $field)
