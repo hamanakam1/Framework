@@ -59,6 +59,9 @@ class InstallerModelExtensions extends JModelList
 		// This Where clause will avoid to list extensions already installed.
 		$query->where('extension_id = 0');
 
+		// Filter only on extensions
+		$query->where('update_site_id = 4');
+
 		// Filter by search in title
 		$search = $this->getState('filter.search');
 		if (!empty($search))

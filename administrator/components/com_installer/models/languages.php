@@ -59,6 +59,9 @@ class InstallerModelLanguages extends JModelList
 		// This Where clause will avoid to list languages already installed.
 		$query->where('extension_id = 0');
 
+		// Filter only on translations
+		$query->where('update_site_id = 3');
+
 		// Filter by search in title
 		$search = $this->getState('filter.search');
 		if (!empty($search))
