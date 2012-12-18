@@ -62,6 +62,11 @@ class InstallerHelper
 			'index.php?option=com_installer&view=languages',
 			$vName == 'languages'
 		);
+		JHtmlSidebar::addEntry(
+			JText::_('COM_INSTALLER_SUBMENU_EXTENSIONS'),
+			'index.php?option=com_installer&view=extensions',
+			$vName == 'extensions'
+		);
 	}
 
 	/**
