@@ -68,8 +68,6 @@ SELECT 17,1,37,38,1,'com_messages','com_messages','{"core.admin":{"7":1},"core.m
 UNION ALL
 SELECT 18,1,39,40,1,'com_modules','com_modules','{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'
 UNION ALL
-SELECT 19,1,41,44,1,'com_newsfeeds','com_newsfeeds','{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
-UNION ALL
 SELECT 20,1,45,46,1,'com_plugins','com_plugins','{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'
 UNION ALL
 SELECT 21,1,47,48,1,'com_redirect','com_redirect','{"core.admin":{"7":1},"core.manage":[]}'
@@ -85,8 +83,6 @@ UNION ALL
 SELECT 27,8,18,19,2,'com_content.category.2','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
 UNION ALL
 SELECT 29,7,14,15,2,'com_contact.category.4','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
-UNION ALL
-SELECT 30,19,42,43,2,'com_newsfeeds.category.5','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'
 UNION ALL
 SELECT 32,24,54,55,1,'com_users.notes.category.7','Uncategorised','{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'
 UNION ALL
@@ -209,8 +205,6 @@ UNION ALL
 SELECT 2,27,1,1,2,1,'uncategorised','com_content','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:26:37',0,'1900-01-01 00:00:00',0,'*'
 UNION ALL
 SELECT 4,29,1,5,6,1,'uncategorised','com_contact','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:27:57',0,'1900-01-01 00:00:00',0,'*'
-UNION ALL
-SELECT 5,30,1,7,8,1,'uncategorised','com_newsfeeds','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:28:15',0,'1900-01-01 00:00:00',0,'*'
 UNION ALL
 SELECT 7,32,1,11,12,1,'uncategorised','com_users.notes','Uncategorised','uncategorised','','',1,0,'1900-01-01 00:00:00',1,'{"target":"","image":""}','','','{"page_title":"","author":"","robots":""}',42,'2010-06-28 13:28:33',0,'1900-01-01 00:00:00',0,'*';
 
@@ -515,8 +509,6 @@ SELECT 15, 'com_messages', 'component', 'com_messages', '', 1, 1, 1, 1, '', '', 
 UNION ALL
 SELECT 16, 'com_modules', 'component', 'com_modules', '', 1, 1, 1, 1, '', '{}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
-SELECT 17, 'com_newsfeeds', 'component', 'com_newsfeeds', '', 1, 1, 1, 0, '', '{"show_feed_image":"1","show_feed_description":"1","show_item_description":"1","feed_word_count":"0","show_headings":"1","show_name":"1","show_articles":"0","show_link":"1","show_description":"1","show_description_image":"1","display_num":"","show_pagination_limit":"1","show_pagination":"1","show_pagination_results":"1","show_cat_items":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 18, 'com_plugins', 'component', 'com_plugins', '', 1, 1, 1, 1, '', '{}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
 SELECT 19, 'com_search', 'component', 'com_search', '', 1, 1, 1, 0, '', '{"enabled":"0","show_date":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
@@ -663,8 +655,6 @@ SELECT 418, 'plg_search_contacts', 'plugin', 'contacts', 'search', 0, 1, 1, 0, '
 UNION ALL
 SELECT 419, 'plg_search_content', 'plugin', 'content', 'search', 0, 1, 1, 0, '', '{"search_limit":"50","search_content":"1","search_archived":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
 UNION ALL
-SELECT 420, 'plg_search_newsfeeds', 'plugin', 'newsfeeds', 'search', 0, 1, 1, 0, '', '{"search_limit":"50","search_content":"1","search_archived":"1"}', '', '', 0, '1900-01-01 00:00:00', 0, 0
-UNION ALL
 SELECT 422, 'plg_system_languagefilter', 'plugin', 'languagefilter', 'system', 0, 0, 1, 1, '', '{}', '', '', 0, '1900-01-01 00:00:00', 1, 0
 UNION ALL
 SELECT 423, 'plg_system_p3p', 'plugin', 'p3p', 'system', 0, 1, 1, 0, '', '{"headers":"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"}', '', '', 0, '1900-01-01 00:00:00', 2, 0
@@ -709,9 +699,7 @@ SELECT 442, 'plg_finder_categories', 'plugin', 'categories', 'finder', 0, 1, 1, 
 UNION ALL
 SELECT 443, 'plg_finder_contacts', 'plugin', 'contacts', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 2, 0
 UNION ALL
-SELECT 444, 'plg_finder_content', 'plugin', 'content', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 3, 0
-UNION ALL
-SELECT 445, 'plg_finder_newsfeeds', 'plugin', 'newsfeeds', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 4, 0;
+SELECT 444, 'plg_finder_content', 'plugin', 'content', 'finder', 0, 1, 1, 0, '', '{}', '', '', 0, '1900-01-01 00:00:00', 3, 0;
 
 INSERT INTO #__extensions (extension_id, name, type, element, folder, client_id, enabled, access, protected, manifest_cache, params, custom_data, system_data, checked_out, checked_out_time, ordering, state)
 SELECT 500, 'atomic', 'template', 'atomic', '', 0, 1, 1, 0, '{"name":"atomic","type":"template","creationDate":"10\/10\/09","author":"Ron Severdia","copyright":"Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.","authorEmail":"contact@kontentdesign.com","authorUrl":"http:\/\/www.kontentdesign.com","version":"2.5.0","description":"TPL_ATOMIC_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '1900-01-01 00:00:00', 0, 0
@@ -1708,12 +1696,6 @@ SELECT 11, 'menu', 'com_messages_add', 'New Private Message', '', 'Messaging/New
 UNION ALL
 SELECT 12, 'menu', 'com_messages_read', 'Read Private Message', '', 'Messaging/Read Private Message', 'index.php?option=com_messages', 'component', 0, 10, 2, 15, 0, '1900-01-01 00:00:00', 0, 0, 'class:messages-read', 0, '', 32, 33, 0, '*', 1
 UNION ALL
-SELECT 13, 'menu', 'com_newsfeeds', 'News Feeds', '', 'News Feeds', 'index.php?option=com_newsfeeds', 'component', 0, 1, 1, 17, 0, '1900-01-01 00:00:00', 0, 0, 'class:newsfeeds', 0, '', 35, 40, 0, '*', 1
-UNION ALL
-SELECT 14, 'menu', 'com_newsfeeds_feeds', 'Feeds', '', 'News Feeds/Feeds', 'index.php?option=com_newsfeeds', 'component', 0, 13, 2, 17, 0, '1900-01-01 00:00:00', 0, 0, 'class:newsfeeds', 0, '', 36, 37, 0, '*', 1
-UNION ALL
-SELECT 15, 'menu', 'com_newsfeeds_categories', 'Categories', '', 'News Feeds/Categories', 'index.php?option=com_categories&extension=com_newsfeeds', 'component', 0, 13, 2, 6, 0, '1900-01-01 00:00:00', 0, 0, 'class:newsfeeds-cat', 0, '', 38, 39, 0, '*', 1
-UNION ALL
 SELECT 16, 'menu', 'com_redirect', 'Redirect', '', 'Redirect', 'index.php?option=com_redirect', 'component', 0, 1, 1, 24, 0, '1900-01-01 00:00:00', 0, 0, 'class:redirect', 0, '', 53, 54, 0, '*', 1
 UNION ALL
 SELECT 17, 'menu', 'com_search', 'Basic Search', '', 'Search', 'index.php?option=com_search', 'component', 0, 1, 1, 19, 0, '1900-01-01 00:00:00', 0, 0, 'class:search', 0, '', 43, 44, 0, '*', 1
@@ -1924,81 +1906,6 @@ UNION ALL
 SELECT 79,0
 UNION ALL
 SELECT 85,0;
-
-/****** Object:  Table [#__newsfeeds] ******/
-SET QUOTED_IDENTIFIER ON;
-
-CREATE TABLE [#__newsfeeds](
-	[catid] [int] NOT NULL DEFAULT '0',
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[name] [nvarchar](100) NOT NULL DEFAULT '',
-	[alias] [nvarchar](100) NOT NULL,
-	[link] [nvarchar](200) NOT NULL DEFAULT '',
-	[published] [smallint] NOT NULL DEFAULT '0',
-	[numarticles] [bigint] NOT NULL DEFAULT '1',
-	[cache_time] [bigint] NOT NULL DEFAULT '3600',
-	[checked_out] [bigint] NOT NULL DEFAULT '0',
-	[checked_out_time] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[ordering] [int] NOT NULL DEFAULT '0',
-	[rtl] [smallint] NOT NULL DEFAULT '0',
-	[access] [int] NOT NULL DEFAULT '0',
-	[language] [nvarchar](7) NOT NULL,
-	[params] [nvarchar](max) NOT NULL,
-	[created] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[created_by] [bigint] NOT NULL DEFAULT '0',
-	[created_by_alias] [nvarchar](255) NOT NULL DEFAULT '',
-	[modified] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[modified_by] [bigint] NOT NULL DEFAULT '0',
-	[metakey] [nvarchar](max) NOT NULL,
-	[metadesc] [nvarchar](max) NOT NULL,
-	[metadata] [nvarchar](max) NOT NULL,
-	[xreference] [nvarchar](50) NOT NULL,
-	[publish_up] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[publish_down] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000',
-	[description] [nvarchar](max) NOT NULL,
-	[images] [nvarchar](max) NOT NULL,
-	[version] [bigint] NOT NULL DEFAULT '1',
-	[hits] [bigint] NOT NULL DEFAULT '0',
- CONSTRAINT [PK_#__newsfeeds_id] PRIMARY KEY CLUSTERED
-(
-	[id] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
-) ON [PRIMARY];
-
-CREATE NONCLUSTERED INDEX [idx_access] ON [#__newsfeeds]
-(
-	[access] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_catid] ON [#__newsfeeds]
-(
-	[catid] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_checkout] ON [#__newsfeeds]
-(
-	[checked_out] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_createdby] ON [#__newsfeeds]
-(
-	[created_by] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_language] ON [#__newsfeeds]
-(
-	[language] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_state] ON [#__newsfeeds]
-(
-	[published] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
-
-CREATE NONCLUSTERED INDEX [idx_xreference] ON [#__newsfeeds]
-(
-	[xreference] ASC
-)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
 
 
 
